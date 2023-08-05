@@ -1,6 +1,8 @@
 const overview = document.querySelector(".overview");
 const username = "ebrown48";
 const repoList = document.querySelector(".repo-list");
+const reposInfo = document.querySelector(".repos");
+const repoData =document.querySelector(".repo-data");
 
 const profileInfo = async function () {
     const userInfo = await fetch(`https://api.github.com/users/${username}`);
@@ -44,3 +46,23 @@ const displayRepos = function (repos) {
     }
 };
 
+repoList.addEventListener("click", function (e) {
+    if (e.target.matches("h3")) {
+        const repoName = e.target.innerText;
+        
+    }
+};
+matches(selectors)
+
+document.pullData("").addEventListener("click", displayData);
+console.log("pullData");
+repoList.addEventListener("click", function (e) {
+    if (e.target.matches("h3")) {
+        const repoName = e.target.innerText;
+        reposInfo(repoName);
+    }
+});
+
+
+
+  
